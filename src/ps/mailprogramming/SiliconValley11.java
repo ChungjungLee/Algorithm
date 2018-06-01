@@ -30,9 +30,6 @@ public class SiliconValley11 {
 	
 	/**
 	 * 해시 테이블을 이용하여 풀었지만, 영문자 26개를 원소로 하는 배열을 만들어 풀어도 괜찮겠다.
-	 * @param plainText
-	 * @param encryptedText
-	 * @return
 	 */
 	private static boolean isEncryptable(String plainText, String encryptedText) {
 		HashMap<Character, Character> encryptTable = new HashMap<>();
