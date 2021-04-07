@@ -10,3 +10,6 @@ target/
 .settings/
 .loadpath
 
+# IntelliJ #
+.idea
+Algorithm.iml
