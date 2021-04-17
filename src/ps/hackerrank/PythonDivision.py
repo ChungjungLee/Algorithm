@@ -1,0 +1,11 @@
+'''
+    https://www.hackerrank.com/challenges/python-division/problem
+'''
+def sol(a, b):
+    print(a // b)
+    print(a / b)
+
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    sol(a, b)
