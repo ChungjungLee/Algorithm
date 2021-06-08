@@ -13,3 +13,5 @@ target/
 # IntelliJ #
 .idea
 Algorithm.iml
+
+out/
