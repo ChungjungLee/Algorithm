@@ -1,4 +1,4 @@
-package ps.hackerrank;
+package ps.realproblem;
 
 import java.io.*;
 import java.util.*;
@@ -41,7 +41,7 @@ import java.util.*;
  *      >> open tag + keep stack
  */
 
-public class CodingTest {
+public class Trixxxx {
     static String openTag(String tag) {
         StringBuilder stringBuilder = new StringBuilder();
 
