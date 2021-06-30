@@ -24,32 +24,36 @@ class Result {
     public static void decentNumber(int n) {
     // Write your code here
         int input = n;
-        int num3 = (n >= 5) ? 0 : -1;
-        int num5 = 0;
         
-        
+        int numOfFive = 0;
         while (n > 0) {
             if (n % 3 == 0) {
-                num5 = (n / 3);
+                numOfFive = n / 3;
                 break;
             }
             
-            n = n - 5;
-            num3++;
+            n -= 5;
         }
         
-        if (input == 7 || (num3 == 0 && num5 == 0)) {
+        int numOfThree = 0;
+        if ((input - (numOfFive * 3)) % 5 == 0) {
+            numOfThree = (input - (numOfFive * 3)) / 5;
+        }
+        
+        if (numOfFive == 0 && numOfThree == 0) {
             System.out.println("-1");
             return;
         }
         
         StringBuilder builder = new StringBuilder();
-        for (int i = num5; i > 0; i--) {
+        while (numOfFive > 0) {
             builder.append("555");
+            numOfFive--;
         }
         
-        for (int i = num3; i > 0; i--) {
+        while (numOfThree > 0) {
             builder.append("33333");
+            numOfThree--;
         }
         
         System.out.println(builder.toString());
