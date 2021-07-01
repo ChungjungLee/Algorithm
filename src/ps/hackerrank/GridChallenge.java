@@ -40,15 +40,8 @@ class Result {
             
             list.add(queue);
         }
-        
-        // for (int i = 0; i < list.size(); i++) {
-        //     while (list.get(i).size() != 0) {
-        //         System.out.print(list.get(i).poll());
-        //     }
-        //     System.out.println();
-        // }
-        
-        for (int i = 0; i < list.size(); i++) {
+
+        for (int i = 0; i < grid.get(0).length(); i++) {
             for (int j = 1; j < list.size(); j++) {
                 if (list.get(j - 1).peek() > list.get(j).peek()) {
                     return "NO";
